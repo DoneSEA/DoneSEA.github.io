@@ -18,6 +18,9 @@
 	<link rel="stylesheet" href="HTML/css/xenon-skins.css">
 	<link rel="stylesheet" href="HTML/css/custom.css">
 
+	<!--**txt-->
+	<link rel="stylesheet" href="HTML/css/txtstyle.css">
+
 	<script src="HTML/js/jquery-1.11.1.min.js"></script>
 	
 
@@ -26,6 +29,7 @@
 	<link href="style.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/nivo-slider.css" rel="stylesheet" type="text/css" media="all" />
 
+
 	<!-- **jQuery** -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 
@@ -33,7 +37,31 @@
 	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
 	<script type='text/javascript' src="js/spa.custom.js"></script>
 	
+	<style>
+		.txtjustify{
+			position: relative;
+			line-height:28px;
+			padding: 10px;
+			width: 900px;
+			text-align:justify;
+		}
 
+		.order {    
+			height: 60px;    
+			line-height: 60px;    
+			text-align: center;
+		}
+		.order.line{    
+			display: inline-block;    
+			width: 35%;    
+			border-top: 3px 
+			solid #D0D0D0;
+		}
+		.order.txt{    
+			color: #D0D0D0;    
+			vertical-align: middle;
+		}
+	</style>
 
 </head>
 <body class="page-body">
@@ -212,133 +240,97 @@
 		</div>
 
 		<div class="main-content">
-					
-			
-			<div class="jumbotron">
-				<h2>What is SEA?</h2>
 
-				<p>
-					<img align="right" src="HTML/images/LOGO/SEA.png" alt="drawing" width="200" />
-				</p>
+			<div>
+				<h1>What is SEA?</h1>
 
-				<h4>&nbsp;&nbsp;&nbsp;&nbsp;SEA (Spartan Edge Accelerator Board) is a Xilinx Spartan FPGA development board, which is the same shape and size as the Arduino UNO expansion board.</h4>
-				<h4>&nbsp;&nbsp;&nbsp;&nbsp;It can be used with Arduino as an FPGA expansion board and a stand-alone FPGA development board. With the on-board ESP32 chip, the Spartan Edge accelerator board also has 2.4GHz WIFI and Bluetooth 4.1. </h4>
-				<h4>&nbsp;&nbsp;&nbsp;&nbsp;In addition, the development board has rich peripheral devices and interfaces, and has strong playability.</h4>
-				<h4>&nbsp;&nbsp;&nbsp;&nbsp;For example, 8-bit ADC, 6-axis accelerometer, 2 RGB LEDs, MINI HDMI interface, CSI camera interface, two Grove interfaces, etc. All in all, it will be called the ideal FPGA board for manufacturers and hobbyists.</h4>
+				<div style="position:absolute; top:60px; right:20px;">
+					<video autoplay loop width="640" alt="480">
+						<source src="HTML/videos/SEA_Intro_V1.0.mp4" type="video/mp4" >
+					</video>
+				</div>
+				<h3>
+					<img align="left" src="HTML/images/LOGO/SEA.png" alt="drawing" width="300" />
+				</h3>
+
+				<h4 class="txtjustify">&nbsp;&nbsp;&nbsp;Spartan Edge Accelerator Board is a Xilinx Spartan FPGA development board in the Arduino UNO shield form factor. It can work with Arduino as an FPGA shield and as a stand-alone FPGA development board. With the onboard ESP32 chip, the Spartan Edge Accelerator Board also features 2.4GHz WiFi and Bluetooth 4.1. </h4>
+
+				<h4 class="txtjustify">&nbsp;&nbsp;&nbsp;Moreover, this development board has a wealth of peripherals and interfaces which are extremely playable. Such as an 8-bit ADC, a 6-axis accelerometer, two RGB LEDs, a MINI HDMI interface, a CSI camera interface, two Grove interfaces, etc. All in all, it will be a perfect FPGA board for Makers and Hobbyists.</h4>
 				
 				<br />
-				<a class="btn btn-primary btn-lg" href="https://github.com/DoneSEA/SEA/wiki/Board-Introduction" role="button">Learn More</a>
+
+				<a class="btn btn-primary btn-lg" href="https://github.com/DoneSEA/SEA/wiki/Board-Introduction" role="button" style="position:absolute;right:260px;">Learn More</a>
 			</div>
 			
-			<h3 id="layout-toggles">
-				Layout Toggles
+			<div>
+
+				<h4 class="txtjustify">&nbsp;&nbsp;&nbsp;The Spartan Edge Accelerator Board is built around Xilinx Spartan-7 XC7S15 FPGA, which is a cost-effect but powerful FPGA chip. When it comes to Ardunio FPGA, the first mover Arduino MKR Vidor 4000 was always mentioned. Compared with the official Arduino MKR Vidor 4000, the Spartan Edge Accelerator Board has a similar performance, but the price is less than half! Spartan Edge Accelerator Board can run at up to 100Mhz clock speed and offers 12.8K logic cells, 360Kb block RAM. Well, to drive a camera or HDMI display is just a piece of cake. Besides we breakout 10 user-programmable I/O pins of XC7S15, you can configure them as PWM, I2C, I2S, UART, SPI, etc.</h4>
 				<br />
-				<small>sss</small>
-			</h3>
-			<br />
-			
-			
-			
-			<div class="row">
-				
-				<div class="col-xs-3 text-muted">Link</div>
-				<div class="col-xs-9 text-muted">Code</div>
-				
-				<div class="vspacer v3"></div>
-			
-				<div class="col-sm-3">
-					<a href="#" class="btn btn-secondary btn-block btn-icon btn-icon-standalone text-left" data-toggle="sidebar">
-						<i class="fa-bars"></i>
-						<span>Toggle Sidebar</span>
-					</a>
-				</div>
-				<div class="col-sm-9">
-					<pre>&lt;a href=&quot;#&quot; data-toggle=&quot;sidebar&quot;&gt;Toggle Sidebar&lt;/a&gt;</pre>
-				</div>
-				
-				<div class="clearfix"></div>
-				<div class="vspacer v4"></div>
-			
-				<div class="col-sm-3">
-					<a href="#" class="btn btn-secondary btn-block btn-icon btn-icon-standalone text-left" data-toggle="chat">
-						<i class="fa-comment-o"></i>
-						<span>Toggle Chat</span>
-					</a>
-				</div>
-				<div class="col-sm-9">
-					<pre>&lt;a href=&quot;#&quot; data-toggle=&quot;chat&quot;&gt;Toggle Chat&lt;/a&gt;</pre>
-				</div>
-				
-				<div class="clearfix"></div>
-				<div class="vspacer v4"></div>
-			
-				<div class="col-sm-3">
-					<a href="#" class="btn btn-secondary btn-block btn-icon btn-icon-standalone text-left" data-toggle="settings-pane">
-						<i class="linecons-user"></i>
-						<span>Toggle Settings Pane</span>
-					</a>
-				</div>
-				<div class="col-sm-9">
-					<pre>&lt;a href=&quot;#&quot; data-toggle=&quot;chat&quot;&gt;Toggle Settings Pane&lt;/a&gt;</pre>
-				</div>
-			
-				
-				<div class="clearfix"></div>
-				<div class="vspacer v4"></div>
-			
-				<div class="col-sm-3">
-					<a href="#" class="btn btn-secondary btn-block btn-icon btn-icon-standalone text-left" data-toggle="settings-pane" data-animate="true">
-						<i class="linecons-cog"></i>
-						<span>Settings Pane /w Animation</span>
-					</a>
-				</div>
-				<div class="col-sm-9">
-					<pre>&lt;a href=&quot;#&quot; data-toggle=&quot;chat&quot; data-animate=&quot;true&quot;&gt;Toggle Settings Pane&lt;/a&gt;</pre>
-				</div>
-			
-				
-				<div class="clearfix"></div>
-				<div class="vspacer v4"></div>
-			
-				<div class="col-sm-3">
-					<a href="#" class="btn btn-secondary btn-block btn-icon btn-icon-standalone text-left" rel="go-top">
-						<i class="fa-arrow-up"></i>
-						<span>Go to Top</span>
-					</a>
-				</div>
-				<div class="col-sm-9">
-					<pre>&lt;a href=&quot;#&quot; rel=&quot;go-top&quot;&gt;Go to Top&lt;/a&gt;</pre>
-				</div>
-			
 			</div>
 			
-			
-			<br />
-			<br />
-			
-			<h3 id="layout-variants">
-				Layout Variants
+			<div>
+				<h2>ESP32</h2>
+
+				<h4 class="txtjustify">&nbsp;&nbsp;&nbsp;We know you love ESP32, so we used it as the wireless core. It supports 802.11 b/g/n 2.4GHz WiFi as well as Bluetooth 4.1 with BLE. Just a single board to enable your Arduino with FPGA and Wireless function, isn't it amazing?</h4>
 				<br />
-				<small>9 different layout types with fixed or static scrolling panels</small>
-			</h3>
+			</div>
+
+			<div>
+				<h2 align="right" style="right:100px">Hardware Overview&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+				<h3 style="top:10px;right:500px;">
+					<img align="right" src="HTML/images/Board/Spartan-Edge-Accelerater-Board-v1.0-pin.jpg" alt="drawing" width="628" />
+				</h3>
+
+				<h2>Arduino FPGA API</h2>
+
+				<h4 class="txtjustify">&nbsp;&nbsp;&nbsp;On top of that, we provide a full Arduino FPGA  API to help you use FPGA resources to control FPGA I/Os with Arduino IDE even if you know nothing about the FPGA theory. Spartan Edge Accelerator Board will equip Arduino with the ability that was once unimaginable, such as edge technology, image recognition, signal sampling and processing, and so on.</h4>
+				<br />
+			</div>
+
+			<div>
+				
+				<h1>Features</h1>
+
+				<h2>High-speed image processing</h2>
+
+				<li><h4>&nbsp;&nbsp;&nbsp;Support Raspberry Pi camera v1.0(OV5640)</h4></li>
+				<li><h4>&nbsp;&nbsp;&nbsp;Support max 30fps image transmission</h4></li>
+				<br />
+
+				<h2>Encrypted Internet of Things</h2>
+
+				<li><h4>&nbsp;&nbsp;&nbsp;Support cloud services （AWS, Azure, etc.）</h4></li>
+				<li><h4>&nbsp;&nbsp;&nbsp;Support software encryption algorithm</h4></li>
+				<br />
+
+				<h2>Multiple I/O port extensions</h2>
+
+				<li><h4>&nbsp;&nbsp;&nbsp;20 extended I/O ports（FPGA stand-alone mode）</h4></li>
+				<li><h4>&nbsp;&nbsp;&nbsp;10 extended I/O ports（Arduino shield mode）</h4></li>
+				<li><h4>&nbsp;&nbsp;&nbsp;Support for Arduino expansion interface</h4></li>
+				<br />
+
+				<h2>Target Users</h2>
+
+				<li><h4>&nbsp;&nbsp;&nbsp;IoT developer</h4></li>
+				<li><h4>&nbsp;&nbsp;&nbsp;Arduino developer</h4></li>
+				<li><h4>&nbsp;&nbsp;&nbsp;FPGA developers</h4></li>
+
+				<br />
+			</div>
+
+			
 			
 		
 			<!-- Main Footer -->
-			<!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
-			<!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
-			<!-- Or class "fixed" to  always fix the footer to the end of page -->
 			<footer class="main-footer sticky footer-type-1">
 				
 				<div class="footer-inner">
-				
-					<!-- Add your copyright text here -->
 					<div class="footer-text">
 						&copy; 2020 
 						<strong>SEA</strong> 
 					</div>
 					
-					
-					<!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
 					<div class="go-up">
 					
 						<a href="#" rel="go-top">
@@ -354,44 +346,12 @@
 	</div>
 
 
-	<!--
-	<div class="main-content">
-
-		    	<div class="slider-wrapper theme-default" style="position:absolute; width:500px; height:300px;left:200px;top:10px;">    
-		            <div id="slider" class="nivoSlider" style="position:absolute; width:500px; height:300px;left:200px;top:10px;">
-		                <img src="images/post-images/slider-image.jpg" alt="" />
-		                <img src="images/post-images/slider-image2.jpg" alt="" />
-		                <img src="images/post-images/slider-image3.jpg" alt="" />
-		            </div>
-		                    
-		        </div>
-		    
-	
-
-	</div>
-
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$("span.arctext").each(function(){
-				$(this).arctext({radius: $(this).attr('data-radius')});
-			});
-		});
-	</script>
-
-	-->
-
 	<!-- Bottom Scripts -->
 	<script src="HTML/js/bootstrap.min.js"></script>
 	<script src="HTML/js/TweenMax.min.js"></script>
 	<script src="HTML/js/resizeable.js"></script>
 	<script src="HTML/js/joinable.js"></script>
-	<!--
-	<script src="HTML/js/xenon-api.js"></script>
-	<script src="HTML/js/xenon-toggles.js"></script>
-	-->
-
 	<script src="HTML/js/xenon-custom.js"></script>
-
 </body>
 
 
