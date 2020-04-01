@@ -4,8 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.75, maximum-scale=0.75, minimum-scale=0.75"/>
 	
 	<title>SEA</title>
 
@@ -42,33 +41,16 @@
 			position: relative;
 			line-height:28px;
 			padding: 10px;
-			width: 900px;
+			width: 50%;
 			text-align:justify;
-		}
-
-		.order {    
-			height: 60px;    
-			line-height: 60px;    
-			text-align: center;
-		}
-		.order.line{    
-			display: inline-block;    
-			width: 35%;    
-			border-top: 3px 
-			solid #D0D0D0;
-		}
-		.order.txt{    
-			color: #D0D0D0;    
-			vertical-align: middle;
 		}
 	</style>
 
 </head>
-<body class="page-body">
-
+<body  id ="page-main" class="page-body"  style="margin-right: auto;margin-left: auto;width: 1920px;height:1080px;">
 	<div class="page-container">
 
-		<div class="sidebar-menu toggle-others fixed">
+		<div class="sidebar-menu toggle-others">
 			
 			<div class="sidebar-menu-inner">	
 				
@@ -76,11 +58,11 @@
 					
 					<div class="logo">
 						<a href="https://github.com/DoneSEA/SEA" class="logo-expanded">
-							<img src="HTML/images/LOGO/SEA_LOGO.png" width="80" alt="" />
+							<img src="HTML/images/LOGO/SEA_LOGO.png" width="80%" alt="" />
 						</a>
 						
 						<a href="https://github.com/DoneSEA/SEA" class="logo-collapsed">
-							<img src="HTML/images/LOGO/SEA_LOGO_MAX.png" width="40" alt="" />
+							<img src="HTML/images/LOGO/SEA_LOGO_MAX.png" width="40%" alt="" />
 						</a>
 					</div>
 				
@@ -94,7 +76,7 @@
 				</header>
 							
 
-				<ul id="main-menu" class="main-menu">
+				<ul class="main-menu">
 
 					<li class="active opened active">
 						<a href="index.html">
@@ -244,22 +226,31 @@
 			<div>
 				<h1>What is SEA?</h1>
 
-				<div style="position:absolute; top:60px; right:20px;">
-					<video autoplay loop width="640" alt="480">
+				
+
+				<div>
+					<img align="left" src="HTML/images/LOGO/SEA.png" alt="drawing" width="300" />
+
+					<video align="right" autoplay loop width="40%" alt="30%" style="position:absolute;right:2%;">
 						<source src="HTML/videos/SEA_Intro_V1.0.mp4" type="video/mp4" >
 					</video>
+
+					<h4 class="txtjustify">&nbsp;&nbsp;&nbsp;Spartan Edge Accelerator Board is a Xilinx Spartan FPGA development board in the Arduino UNO shield form factor. It can work with Arduino as an FPGA shield and as a stand-alone FPGA development board. With the onboard ESP32 chip, the Spartan Edge Accelerator Board also features 2.4GHz WiFi and Bluetooth 4.1. </h4>
+
+
+
+					<h4 class="txtjustify">&nbsp;&nbsp;&nbsp;Moreover, this development board has a wealth of peripherals and interfaces which are extremely playable. Such as an 8-bit ADC, a 6-axis accelerometer, two RGB LEDs, a MINI HDMI interface, a CSI camera interface, two Grove interfaces, etc. All in all, it will be a perfect FPGA board for Makers and Hobbyists.</h4>
+
+					
+					
+					<a class="btn btn-primary btn-lg" href="https://github.com/DoneSEA/SEA/wiki/Board-Introduction" role="button" style="position:absolute;right:18%;top:28%" width="40%" alt="30%">Learn More</a>
 				</div>
-				<h3>
-					<img align="left" src="HTML/images/LOGO/SEA.png" alt="drawing" width="300" />
-				</h3>
-
-				<h4 class="txtjustify">&nbsp;&nbsp;&nbsp;Spartan Edge Accelerator Board is a Xilinx Spartan FPGA development board in the Arduino UNO shield form factor. It can work with Arduino as an FPGA shield and as a stand-alone FPGA development board. With the onboard ESP32 chip, the Spartan Edge Accelerator Board also features 2.4GHz WiFi and Bluetooth 4.1. </h4>
-
-				<h4 class="txtjustify">&nbsp;&nbsp;&nbsp;Moreover, this development board has a wealth of peripherals and interfaces which are extremely playable. Such as an 8-bit ADC, a 6-axis accelerometer, two RGB LEDs, a MINI HDMI interface, a CSI camera interface, two Grove interfaces, etc. All in all, it will be a perfect FPGA board for Makers and Hobbyists.</h4>
 				
+				
+
 				<br />
 
-				<a class="btn btn-primary btn-lg" href="https://github.com/DoneSEA/SEA/wiki/Board-Introduction" role="button" style="position:absolute;right:260px;">Learn More</a>
+				
 			</div>
 			
 			<div>
@@ -339,15 +330,23 @@
 		</div>
 	</div>
 
-
 	<!-- Bottom Scripts -->
 	<script src="HTML/js/bootstrap.min.js"></script>
 	<script src="HTML/js/TweenMax.min.js"></script>
 	<script src="HTML/js/resizeable.js"></script>
 	<script src="HTML/js/joinable.js"></script>
 	<script src="HTML/js/xenon-custom.js"></script>
+
+
 </body>
 
-
+<script type="text/javascript">
+    /*var Page_Set = document.getElementById("page-main");
+    var winWidth = window.innerWidth;
+	var winHeight = window.innerHeight;
+	Page_Set.style.width=1280;
+	Page_Set.style.height=720;
+	//$("#page-main").css
+</script>
 
 </html>
