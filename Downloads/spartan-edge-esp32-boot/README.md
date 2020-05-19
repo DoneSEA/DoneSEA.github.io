@@ -78,8 +78,8 @@ Install this Git repository as an additional library, either from a checked out 
 
 #### Sample bitstreams
 Some bitstream/FPGA_LOGIC files we compiled are provided here, you can download them directly.  
-  + [spi2gpio.bit](Downloads/spartan-edge-ioex/bitstream)  
-  GPIO extension controlled by SPI interface, with support of ADC/DAC/RGB-LED, see ***[source code](https://github.com/DoneSEA/SEA/Demos/7.Interface/spi2gpio)***.  
+  + [spi2gpio.bit](../Downloads/spartan-edge-ioex/bitstream)  
+  GPIO extension controlled by SPI interface, with support of ADC/DAC/RGB-LED, see ***[source code](https://github.com/DoneSEA/SEA/tree/master/Demos/7.Interface/spi2gpio)***.  
 
 <br>
 
