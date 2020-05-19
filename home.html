@@ -1,57 +1,327 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>dd</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.75, maximum-scale=0.75, minimum-scale=0.75"/>
+	
+	<title>SEA</title>
 
-  <style>
+	<link rel="stylesheet" href="src/css/fonts/linecons/css/linecons.css">
+	<link rel="stylesheet" href="src/css/fonts/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="src/css/bootstrap.css">
+	<link rel="stylesheet" href="src/css/xenon-core.css">
+	<link rel="stylesheet" href="src/css/xenon-forms.css">
+	<link rel="stylesheet" href="src/css/xenon-components.css">
+	<link rel="stylesheet" href="src/css/xenon-skins.css">
+	<link rel="stylesheet" href="src/css/custom.css">
 
-  #canvas {
-                position: absolute;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    cursor: none;
-        }
-        .content{
-      position: absolute;
-    z-index: 11;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-}
+	<!--**txt-->
+	<link rel="stylesheet" href="src/css/txtstyle.css">
 
-  </style>
+	<script src="src/js/jquery-1.11.1.min.js"></script>
+	
+	<style>
+		.txtjustify{
+			position: relative;
+			line-height:28px;
+			padding: 10px;
+			width: 50%;
+			text-align:justify;
+		}
+	</style>
 
-  
 </head>
-<body class="home page page-id-194 page-template page-template-page-homepage page-template-page-homepage-php custom-background" ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
+<body  id ="page-main" class="page-body"  style="margin-right: auto;margin-left: auto;width: 1920px;height:1080px;">
+	<div class="page-container">
 
-  <div class="ss">
-    
-  <canvas id="canvas" width="100%" height="100%"></canvas>
+		<div class="sidebar-menu toggle-others">
+			
+			<div class="sidebar-menu-inner">	
+				
+				<header class="logo-env">
+					
+					<div class="logo">
+						<a href="https://github.com/DoneSEA/SEA" class="logo-expanded">
+							<img src="src/images/SEA_LOGO.png" width="80%" alt="" />
+						</a>
+						
+						<a href="https://github.com/DoneSEA/SEA" class="logo-collapsed">
+							<img src="src/images/SEA_LOGO_MAX.png" width="40%" alt="" />
+						</a>
+					</div>
+				
+					<div class="settings-icon">
+						<a href="#" data-toggle="settings-pane" data-animate="true">
+							<i class="linecons-cog"></i>
+						</a>
+					</div>
 
-  </div>
+
+				</header>
+							
+
+				<ul class="main-menu">
+
+					<li class="active opened active">
+						<a href="index.html">
+							<i class="linecons-cog"></i>
+							<span class="title">About Us</span>
+						</a>
+					</li>
+					<li>
+						<a href="index.html">
+							<i class="linecons-globe"></i>
+							<span class="title">News</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="linecons-star"></i>
+							<span class="title">Demos</span>
+						</a>
+						<ul>
+							<li>
+								<a href="case_introduction.html">
+									<span class="title">Case Introduction</span>
+								</a>
+							</li>
+							<li>
+								<a href="related_video.html">
+									<span class="title">Related Video</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="https://github.com/DoneSEA/SEA/wiki">
+							<i class="linecons-note"></i>
+							<span class="title">Documentation</span>
+						</a>
+						<ul>
+							<li>
+								<a href="https://github.com/DoneSEA/SEA/wiki">
+									<span class="title">Home</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/DoneSEA/SEA/wiki/Board-Introduction">
+									<span class="title">Board Introduction</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/DoneSEA/SEA/wiki/Platform-Introduction">
+									<span class="title">Platform Introduction</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/DoneSEA/SEA/wiki/Using-Instructions">
+									<span class="title">Using Instructions</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/DoneSEA/SEA/wiki/Case-Introduction">
+									<span class="title">Case Introduction</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="https://github.com/DoneSEA/DoneSEA.github.io/tree/master/Downloads">
+							<i class="linecons-params"></i>
+							<span class="title">Downloads</span>
+							<span class="label label-success pull-right">7</span>
+						</a>
+						<ul>
+							<li>
+								<a href="https://github.com/DoneSEA/DoneSEA.github.io/tree/master/Downloads/Datasheets">
+									<span class="title">Datasheets</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/DoneSEA/DoneSEA.github.io/tree/master/Downloads/Schematic-of-SEA">
+									<span class="title">Schematic</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/DoneSEA/DoneSEA.github.io/tree/master/Downloads/USB-Drivers">
+									<span class="title">USB Driver</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/DoneSEA/DoneSEA.github.io/tree/master/Downloads/Files-of-SD-card">
+									<span class="title">SD card files</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/DoneSEA/DoneSEA.github.io/tree/master/Downloads/Files-of-Pin-definition">
+									<span class="title">Pin definition</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/DoneSEA/DoneSEA.github.io/tree/master/Downloads/Softwares">
+									<span class="title">Softwares</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/DoneSEA/DoneSEA.github.io/tree/master/Downloads/Firmware-of-ESP32">
+									<span class="title">ESP32 firmware</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="https://github.com/DoneSEA/SEA">
+							<i class="linecons-database"></i>
+							<span class="title">Projects</span>
+						</a>
+						<ul>
+							<li>
+								<a href="https://github.com/DoneSEA/SEA/tree/master/Hello-World">
+									<span class="title">Hello world</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/DoneSEA/SEA/tree/master/Examples">
+									<span class="title">Examples</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/DoneSEA/SEA/tree/master/Demos">
+									<span class="title">Demos</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/DoneSEA/SEA/tree/master/Community">
+									<span class="title">Community</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+				</ul>
+					
+				
+			</div>
+			
+		</div>
+
+		<div class="main-content">
+
+			<div>
+				<h1>What is SEA?</h1>
+
+				<div>
+					<img align="left" src="src/images/SEA.png" alt="drawing" width="300" />
+
+					<video align="right" autoplay loop width="40%" alt="30%" style="position:absolute;right:2%;">
+						<source src="src/videos/SEA_Intro_V1.0.mp4" type="video/mp4" >
+					</video>
+
+					<h4 class="txtjustify">Spartan Edge Accelerator Board is a Xilinx Spartan FPGA development board in the Arduino UNO shield form factor. It can work with Arduino as an FPGA shield and as a stand-alone FPGA development board. With the onboard ESP32 chip, the Spartan Edge Accelerator Board also features 2.4GHz WiFi and Bluetooth 4.1. </h4>
 
 
-<script src="HTML/scripts/hovereffects.js"></script>
-<script type="text/javascript">
 
-        ; (function (window) {
+					<h4 class="txtjustify">Moreover, this development board has a wealth of peripherals and interfaces which are extremely playable. Such as an 8-bit ADC, a 6-axis accelerometer, two RGB LEDs, a MINI HDMI interface, a CSI camera interface, two Grove interfaces, etc. All in all, it will be a perfect FPGA board for Makers and Hobbyists.</h4>
 
-            var SpecialEffects=new Hovereffects();
-        })(window);
+					
+					
+					<a class="btn btn-primary btn-lg" href="https://github.com/DoneSEA/SEA/wiki/Board-Introduction" role="button" style="position:absolute;right:18%;top:465px" width="40%" alt="30%">Learn More</a>
+				</div>
+				
+				
 
-    </script>
+				<br />
 
-<audio autoplay="autoplay">
-<source src="http://p2.music.126.net/pOH2QXwQc_7IX4l2sB-iSA==/7954966629620463.mp3" type="audio/mpeg">
-</audio>
- 
+				
+			</div>
+			
+			<div>
+				<h2>ESP32</h2>
+
+				<h4 class="txtjustify">We know you love ESP32, so we used it as the wireless core. It supports 802.11 b/g/n 2.4GHz WiFi as well as Bluetooth 4.1 with BLE. Just a single board to enable your Arduino with FPGA and Wireless function, isn't it amazing?</h4>
+				<br />
+			</div>
+
+			<div>
+				<h2 align="right" style="position:absolute;top:640px;right:50px">Hardware Overview&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+				<h3 style="position:absolute;top:690px;right:40px;">
+					<img align="right" src="src/images/Spartan-Edge-Accelerater-Board-v1.0-pin.jpg" alt="drawing" width="628" />
+				</h3>
+
+				<h2>Arduino FPGA API</h2>
+
+				<h4 class="txtjustify">On top of that, we provide a full Arduino FPGA  API to help you use FPGA resources to control FPGA I/Os with Arduino IDE even if you know nothing about the FPGA theory. Spartan Edge Accelerator Board will equip Arduino with the ability that was once unimaginable, such as edge technology, image recognition, signal sampling and processing, and so on.</h4>
+				<br />
+			</div>
+
+			<div>
+				
+				<h1>Features</h1>
+
+				<h2>High-speed image processing</h2>
+
+				<li><h4>Support Raspberry Pi camera v1.0(OV5640)</h4></li>
+				<li><h4>Support max 30fps image transmission</h4></li>
+				<br />
+
+				<h2>Encrypted Internet of Things</h2>
+
+				<li><h4>Support cloud services （AWS, Azure, etc.）</h4></li>
+				<li><h4>Support software encryption algorithm</h4></li>
+				<br />
+
+				<h2>Multiple I/O port extensions</h2>
+
+				<li><h4>20 extended I/O ports（FPGA stand-alone mode）</h4></li>
+				<li><h4>10 extended I/O ports（Arduino shield mode）</h4></li>
+				<li><h4>Support for Arduino expansion interface</h4></li>
+				<br />
+
+				<h2>Target Users</h2>
+
+				<li><h4>IoT developer</h4></li>
+				<li><h4>Arduino developer</h4></li>
+				<li><h4>FPGA developers</h4></li>
+
+				<br />
+			</div>
+
+			
+			
+		
+			<!-- Main Footer -->
+			<footer class="main-footer sticky footer-type-1">
+				
+				<div class="footer-inner">
+					<div class="footer-text">
+						&copy; 2020 
+						<strong>SEA</strong> 
+					</div>
+					
+					<div class="go-up">
+					
+						<a href="#" rel="go-top">
+							<i class="fa-angle-up"></i>
+						</a>
+						
+					</div>
+					
+				</div>
+				
+			</footer>
+		</div>
+	</div>
+
+	<!-- Bottom Scripts -->
+	<script src="src/js/bootstrap.min1.js"></script>
+	<script src="src/js/TweenMax.min.js"></script>
+	<script src="src/js/resizeable.js"></script>
+	<script src="src/js/joinable.js"></script>
+	<script src="src/js/xenon-custom.js"></script>
+
 
 </body>
+
 </html>
