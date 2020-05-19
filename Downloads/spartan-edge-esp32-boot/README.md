@@ -13,7 +13,7 @@ The software development environment is [Arduino IDE](https://www.arduino.cc/en/
 
 ## Spartan Edge Accelerator Board
 It can be used independently as an Arduino compatible board, or plugged into an Arduino Boards(Arduino UNO eg.) as an auxiliary accelerator board.  
-![pic](extras/spartan.png)
+![](/extras/spartan.png)
 
 <br>
 
