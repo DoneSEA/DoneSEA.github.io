@@ -1,0 +1,27 @@
+{
+  "Board_Info": {
+    "board_name": "SEA",
+    "version:": [
+      0, 1, 0
+    ],
+    "relese_date":[
+      2019,6,2
+    ]
+  },
+  "Board_Setup": {
+    "WIFI_config": {
+      "enable": "false",
+      "ssid": "None",
+      "password": "None"
+    },
+    "FTP_config":{
+      "enable":"false"
+    },
+    "boot_on_SDcard":"false"
+
+  },
+  "Overlay_List": [
+     "base.bit",
+     "test.bit"
+  ]
+}
