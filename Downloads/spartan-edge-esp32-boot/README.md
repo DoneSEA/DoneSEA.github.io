@@ -13,7 +13,7 @@ The software development environment is [Arduino IDE](https://www.arduino.cc/en/
 
 ## Spartan Edge Accelerator Board
 It can be used independently as an Arduino compatible board, or plugged into an Arduino Boards(Arduino UNO eg.) as an auxiliary accelerator board.  
-![](/extras/spartan.png)
+![](extras/spartan.png)
 
 <br>
 
@@ -78,8 +78,8 @@ Install this Git repository as an additional library, either from a checked out 
 
 #### Sample bitstreams
 Some bitstream/FPGA_LOGIC files we compiled are provided here, you can download them directly.  
-  + [spi2gpio.bit](https://github.com/sea-s7/spartan-edge-ioex/tree/bitstream/bitstream)  
-  GPIO extension controlled by SPI interface, with support of ADC/DAC/RGB-LED, see ***[source code](https://github.com/sea-s7/Demo_project/tree/master/spi2gpio)***.  
+  + [spi2gpio.bit](Downloads/spartan-edge-ioex/tree/bitstream/bitstream)  
+  GPIO extension controlled by SPI interface, with support of ADC/DAC/RGB-LED, see ***[source code](https://github.com/SEA/Demos/7.Interface/spi2gpio)***.  
 
 <br>
 
